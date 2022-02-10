@@ -73,6 +73,29 @@ The website content is adapted to work properly in:
 - Dark mode
 - Light mode
 
+## Screenshots 
+
+#### Global Dashboard
+
+![Global Dashboard](/screenshots/global-dashboard.jpg "Global dashboard")
+
+#### Global Cases Progression
+
+![Global Cases Progression](/screenshots/global-cases-progression.jpg "Global Cases Progression")
+
+#### Global Deaths Distribution
+
+![Global Deaths Distribution](/screenshots/global-deaths-distribution.jpg "Global Deaths Distribution")
+
+#### Vaccination Status
+
+![Vaccination Status](/screenshots/vaccination-status.jpg "Vaccination Status")
+
+#### Country Summary - Dark Mode
+
+![Country Summary](/screenshots/country-summary-dark-mode.jpg "Country Summary")
+
+
 ## Built With
 
 - HTML
