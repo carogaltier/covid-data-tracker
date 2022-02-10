@@ -1,0 +1,53 @@
+.card {
+	align-self: stretch;
+	background-color: var(--bg-cards);
+	color: var(--color-white);
+	border-radius: 4px;	
+	border: 0 solid rgba(0,0,0,.125);
+	box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+	padding: 0.4rem 0.8rem;
+	font-size: 1rem;
+	font-weight: 300;
+	font-family: var(--font-mont);
+}
+
+.card h4 {
+	margin: 0.5rem 0;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.card .card-text{
+	font-family: var(--font-mont);
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 0.2rem;
+}
+
+.card .card-subtext{
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 0.2rem;
+	padding: 0 0.2rem;
+}
+
+.card .right i{
+	width: 25%;
+	font-size: 2rem;
+	padding-right: 0.4rem;
+}
+
+
+/* ----------------- CARD BACKGROUND COLOR ----------------------- */
+.summary-content .cases{ 
+	background-color: rgba(255, 159, 64, 0.4);}
+.summary-content .deaths{	
+	background-color: rgba(255, 99, 132, 0.4);}
+.summary-content .recovered{ 
+	background-color: rgba(75, 192, 192, 0.4);}
+.summary-content .test{ 
+	background-color: rgba(54, 162, 235, 0.4);}
+
+

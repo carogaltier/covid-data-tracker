@@ -1,0 +1,42 @@
+.scroll-footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.arrow-scroll {
+	align-self: center;
+	text-align: center;
+
+
+}
+.arrow-scroll__wrap {
+	display: inline-block;
+	transition: all ease-in-out 0.2s;
+	cursor: pointer;
+
+}
+
+.arrow-scroll__wrap a {
+	text-decoration: none;
+	border: none;
+}
+
+.arrow-scroll i {
+	display: block;
+	font-size: 3.5em;
+	line-height: 0.7em;
+	background: -webkit-linear-gradient(-45deg, rgba(255, 99, 132, 0.7) , rgba(255, 159, 64, 0.7));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.arrow-scroll i:hover {
+    background: -webkit-linear-gradient(-45deg, var(--color-red), var(--color-orange));
+    -webkit-background-clip: text;
+}
+
+.transparent {
+	background: transparent !important;
+	color: transparent !important;
+	cursor: default;
+}

@@ -1,0 +1,262 @@
+.main-container {
+    display: grid;
+    grid-template-columns: fit-content auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+	"title-container title-container" 	
+    "aside    	header"
+	"aside    	container1"
+    "aside    	container2"
+    "aside    	container3"
+	"aside    	container4"
+	"aside    	container5"
+	"aside    	container6"
+	"aside    	container7"
+	"aside    	container8"
+	"aside    	container9"
+	"aside    	container10"
+	"aside    	container11"
+	;
+}
+.main-container .aside { grid-area: aside; }
+.main-container .header { grid-area: header; }
+.main-container .container1 { grid-area: container1; }
+.main-container .container2 { grid-area: container2; }
+.main-container .container3 { grid-area: container3; }
+.main-container .container4 { grid-area: container4; }
+.main-container .container5 { grid-area: container5; }
+.main-container .container6 { grid-area: container6; }
+.main-container .container7 { grid-area: container7; }
+.main-container .container8 { grid-area: container8; }
+.main-container .container9 { grid-area: container9; }
+.main-container .container10 { grid-area: container10; }
+.main-container .container11 { grid-area: container11; }
+
+
+/* ------------ DIVIDING CONTENT FROM FOOTER -------------- */
+.container {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+	"content"
+    "footer"    	
+	;
+}
+
+.container .content { 	
+	grid-area: content; 
+	height: 85vh;
+}
+.container .footer { 	
+	grid-area: footer; 
+	height: 15vh;
+}
+
+/* ------------ NESTED GRIDS -------------- */
+
+/* ------------ HEADER CONTENT -------------- */
+.header-content {
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr 1fr;
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"header-menu    	header-menu"
+	"main-title         img-header"                			
+	"main-subtitle		img-header"  			
+	;
+}
+.header .header-menu { grid-area: header-menu; }
+.header .main-title { grid-area: main-title; }
+.header .main-subtitle { grid-area: main-subtitle; }
+.header .img-header { grid-area: img-header; }
+
+
+/* ------------ SUMMARY CONTENT (World, Continents and Countries)-------------- */
+.summary-content {
+	max-width: 100%;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"summary-title 		summary-title    	summary-title		summary-title"
+	"cases         		deaths				piechart    		piechart"                			
+	"recovered			test				piechart    		piechart"  
+	"stats				stats				stats				stats"	           			
+	;
+}
+.summary-content .summary-title { grid-area: summary-title; }
+.summary-content .cases { grid-area: cases; }
+.summary-content .deaths { grid-area: deaths; }
+.summary-content .recovered { grid-area: recovered; }
+.summary-content .test { grid-area: test; }
+.summary-content .piechart { grid-area: piechart; }
+.summary-content .stats { grid-area: stats; }
+
+.piechart {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:  	
+	"chart1 chart2"    		
+	;
+}
+.chart1 { grid-area: chart1; }
+.chart2 { grid-area: chart2; }
+
+.stats {
+	display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: auto;
+    grid-template-areas:  	
+	"stats-subtitle    		stats-chart"
+	;
+}
+.stats-chart { grid-area: stats-chart; }
+.stats-subtitle { grid-area: stats-subtitle; }
+
+
+
+/* ------------ LINE CAHRT CONTENT (Cases and Deaths)-------------- */
+.lineChart-content {
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"lineChart-title    lineChart-title"
+	"lineChart1     	lineChart2"                			   			
+	;
+}
+.lineChart-content .lineChart-title { grid-area: lineChart-title; }
+.lineChart-content .lineChart1 { grid-area: lineChart1; }
+.lineChart-content .lineChart2 { grid-area: lineChart2; }
+
+
+/* ------------ WORLD MAP CONTENT (Cases and Deaths -absolute and per million-)-------------- */
+.map-content {
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 3fr 5fr;
+    grid-template-rows: repeat(3, auto);
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"map-title    	map-title"
+	"mapText     	worldMap"                			   			
+	;
+}
+
+.map-content .map-title { grid-area: map-title; }
+.map-content .worldMap { grid-area: worldMap; }
+.map-content .mapText { grid-area: mapText; }
+
+
+/* ------------ WORLD VACCINES DATA CONTENT -------------- */
+.vaccine-content {
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+	grid-gap: 2em;
+    grid-template-areas:  
+	"vaccine-title    	vaccine-title		vaccine-title		vaccine-title"
+	"lineChart1     	lineChart1		  	lineChart2			lineChart2"
+	"totalVac     		houndredVac 		dailyVac			mIllionVac"                 			   			
+	;
+}
+
+.vaccine-content .vaccine-title { grid-area: vaccine-title; }
+.vaccine-content .lineChart1 { grid-area: lineChart1; }
+.vaccine-content .lineChart2 { grid-area: lineChart2; }
+.vaccine-content .totalVac { grid-area: totalVac; }
+.vaccine-content .houndredVac { grid-area: houndredVac; }
+.vaccine-content .dailyVac { grid-area: dailyVac; }
+.vaccine-content .mIllionVac { grid-area: mIllionVac; }
+
+
+/* ------------ ABOUT ME CONTENT -------------- */
+.aboutMe-content {
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto auto;
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"aboutMe-title"
+	"description"   				
+	;
+}
+.aboutMe-content .aboutMe-title { grid-area: aboutMe-title; }
+.aboutMe-content .description { grid-area: description; }
+
+
+.description {
+	display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4 auto);
+    grid-template-areas:  	
+	"about-title	about-title" 
+	"photo			about" 
+	"social			about"        				
+	;
+}
+.description .about-title { grid-area: about-title; }
+.description .about { grid-area: about; }
+.description .photo { grid-area: photo; }
+.description .social { grid-area: social; }
+
+
+
+/* ------------ CREDITS CONTENT -------------- */
+.credits-content {
+	max-width: 100%;
+	margin: auto;
+	display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content repeat(3 auto);
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"credits-title"
+	"credits"   					
+	;
+}
+.credits-content .credits-title { grid-area: credits-title; }
+.credits-content .credits { grid-area: credits; }
+
+
+.credits {
+	display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: repeat(2 auto);
+    grid-template-areas:  	
+	"credits-description	credits-image"				
+	;
+}
+.credits .credits-description { grid-area: credits-description; }
+.credits .credits-image { grid-area: credits-image; }
+
+.container10 {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4 auto);
+	grid-gap: 2em;
+    grid-template-areas:  	
+	"credits-content"
+	"footer"  
+	"foot-text"    					
+	;
+}
+.container10 .credits-content { grid-area: credits-content; }
+.container10 .footer { grid-area: footer; }
+.container10 .foot-text { grid-area: foot-text; }

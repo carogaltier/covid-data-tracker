@@ -1,0 +1,30 @@
+.stats {
+	background-color: var(--bg-cards);
+	border-radius: 4px;
+	padding: 0;
+}
+
+.stats-subtitle {
+	align-self: center;
+}
+
+.stats-chart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 1rem;
+	margin: 0;
+	align-self: stretch;
+	flex-wrap: wrap;
+}
+
+.stats-chart .chart-child {
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.stats-chart .card-subtext{
+	padding: 0em;
+	text-align: center;
+}
+

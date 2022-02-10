@@ -1,0 +1,24 @@
+.piechart {
+	justify-content: center;
+	align-self: stretch;
+	align-content: center;
+}
+
+.piechart .subtitle {
+	padding-bottom: 1rem;
+}
+
+.chart1 {
+	border-right: 1px solid var(--color-border);
+}
+
+.chart2 {
+	border-left: 1px solid transparent;
+}
+
+.piechart .canvas {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+}
