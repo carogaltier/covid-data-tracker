@@ -1,5 +1,7 @@
 // ------------------- CAHRT.JS CONFIG --------------------------
 Chart.register(ChartDataLabels);
+let lang = "en";
+
 
 //  --------- DEFINING VARIABLES AND CONSTANTS ------------------
 function id(text) {
@@ -18,17 +20,23 @@ function idContent(ID, content, lang) {
     id(ID).textContent = new Intl.NumberFormat(lang).format(content);
 };
 
-// -------------- WORLD LATEST VARIABLES -----------------------
-let fontSize = getComputedStyle(document.documentElement).getPropertyValue('--font-size');
-let aspectRatio1 = getComputedStyle(document.documentElement).getPropertyValue('--aspect-ratio1');
-let aspectRatio2 = getComputedStyle(document.documentElement).getPropertyValue('--aspect-ratio2');
+// ----------- FONT VARIABLES ------------------
+let fontSize = getComputedStyle(document.body).getPropertyValue('font-size');
+let fontNunito = getComputedStyle(document.documentElement).getPropertyValue('--font-nunito');
+
+// ----------- COLOR VARIABLES ------------------
 let red = getComputedStyle(document.documentElement).getPropertyValue('--color-red');
+let orange = getComputedStyle(document.documentElement).getPropertyValue('--color-orange');
 let yellow = getComputedStyle(document.documentElement).getPropertyValue('--color-yellow');
-let green = getComputedStyle(document.documentElement).getPropertyValue('--color-green');
 let lightGreen = getComputedStyle(document.documentElement).getPropertyValue('--color-light-green');
+let blue = getComputedStyle(document.documentElement).getPropertyValue('--color-blue');
+let green = getComputedStyle(document.documentElement).getPropertyValue('--color-green');
+let middleGrey = getComputedStyle(document.documentElement).getPropertyValue('--middle-grey');
+
+
+// -------------- WORLD LATEST VARIABLES -----------------------
 const regionNamesInEnglish = new Intl.DisplayNames(['en'], { type: 'region' });
 const regionNamesInSpanish = new Intl.DisplayNames(['es'], { type: 'region' });
-
 
 // ------------ PIE CHART CONSTANTS AND VARIABLES  --------------------
 let pieCasesDist1 = id('pieCasesDist1');
@@ -91,8 +99,8 @@ let lineChartVac = ["Total vaccines", "Daily Vaccines", "Time", "Number of vacci
 // ------------------- WORLD MAP -------------------------------
 let worldMap1 = id('worldMap1');
 let worldMap2 = id('worldMap2');
-colorCases = [ '#FFEFDF' , '#ff9f40' , '#E97808'];
-colorDeaths = [ '#ffdfe6' , '#ff6384' , '#c84d68'];
+colorCases = [ '#E97808'];
+colorDeaths = [ '#c96379'];
 
 
 

@@ -42,11 +42,11 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
         let dataCasesCu = {
             label: lineChartContent[0],
             data: casesValCu,
-            backgroundColor:"#ffa04069",
+            backgroundColor:"#dd6c3770",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#ff9f40',
+            borderColor: orange,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -56,11 +56,11 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
         let dataCases = {
             label: lineChartContent[0],
             data: casesArray,
-            backgroundColor:"#ffa04069",
+            backgroundColor:"#dd6c3770",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#ff9f40',
+            borderColor: orange,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -77,18 +77,17 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
             options: {    
                 locale: lang,
                 responsive: true,
-                aspectRatio: aspectRatio1, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -102,18 +101,18 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
                         title: {
                             display: true,
                             text: lineChartContent[1],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -127,18 +126,18 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
                         title: {
                         display: true,
                         text: lineChartContent[2],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -159,18 +158,17 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
             options: {    
                 locale: lang,
                 responsive: true,
-                aspectRatio: aspectRatio1, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -184,18 +182,18 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
                         title: {
                             display: true,
                             text: lineChartContent[1],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -210,18 +208,18 @@ function lineChartCases(param= dataWeekly, canvasID1= lineChart1, canvasID2= lin
                         title: {
                         display: true,
                         text: lineChartContent[2],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -282,11 +280,11 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
         let dataDeathsCu = {
             label: lineChartContent[3],
             data: deathsValCu,
-            backgroundColor:"#ff638469",
+            backgroundColor:"#c9637970",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#ff6384',
+            borderColor: red,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -296,11 +294,11 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
         let dataDeaths = {
             label: lineChartContent[3],
             data: deathsArray,
-            backgroundColor:"#ff638469",
+            backgroundColor:"#c9637970",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#ff6384',
+            borderColor: red,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -317,18 +315,17 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
             options: {   
                 locale: lang, 
                 responsive: true,
-                aspectRatio: aspectRatio1, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -342,18 +339,18 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
                         title: {
                             display: true,
                             text: lineChartContent[1],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -367,18 +364,18 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
                         title: {
                         display: true,
                         text: lineChartContent[4],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -399,18 +396,17 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
             options: {    
                 locale: lang,
                 responsive: true,
-                aspectRatio: aspectRatio1, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -424,18 +420,18 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
                         title: {
                             display: true,
                             text: lineChartContent[1],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -449,18 +445,18 @@ function lineChartDeaths(param= dataWeekly, canvasID3= lineChart3, canvasID4= li
                         title: {
                         display: true,
                         text: lineChartContent[4],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -514,11 +510,11 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
         let dataVaccineCu = {
             label: lineChartVac[0],
             data: vaccineTotalArray,
-            backgroundColor:"#36a2eb69",
+            backgroundColor:"#4f7a9970",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#36a2eb',
+            borderColor: blue,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -528,11 +524,11 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
         let dataDailyVaccine = {
             label: lineChartVac[1],
             data: vaccineDailyArray,
-            backgroundColor:"#87e4a369",
+            backgroundColor:"#5a928b70",
             borderWidth: 2,
             radius: lineRadius,
             fill: true,
-            borderColor: '#87e4a3',
+            borderColor: green,
             tension: 0.1,
             datalabels: {
                 labels: { display: false }
@@ -549,18 +545,17 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
             options: {    
                 locale: lang,
                 responsive: true,
-                aspectRatio: aspectRatio2, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -574,18 +569,18 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
                         title: {
                             display: true,
                             text: lineChartVac[2],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -599,18 +594,18 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
                         title: {
                         display: true,
                         text: lineChartVac[3],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -631,18 +626,17 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
             options: {    
                 locale: lang,
                 responsive: true,
-                aspectRatio: aspectRatio2, 
-                mantainAspectRatio: false,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         position: 'top',
                         labels: { 
                             boxWidth: 20,
                             boxHeight: 20,  
-                            color: "#aaaaaa", 
+                            color: middleGrey, 
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400' 
                             },
                         },                
@@ -656,18 +650,18 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
                         title: {
                             display: true,
                             text: lineChartVac[2],
-                            color: '#aaaaaa',
+                            color: middleGrey,
                             font: {
-                            family: 'Montserrat',
+                            family: fontNunito,
                             size: fontSize,
                             weight: '400',                         
                             },
                         },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },
@@ -681,18 +675,18 @@ function lineChartVaccines(param= dataWeekly, canvasID5= lineChart5, canvasID6= 
                         title: {
                         display: true,
                         text: lineChartVac[3],
-                        color: '#aaaaaa',
+                        color: middleGrey,
                         font: {
-                          family: 'Montserrat',
+                          family: fontNunito,
                           size: fontSize,
                           weight: '400',                         
                         },
                       },
                         ticks: {
                             padding: 8,
-                            color: "#aaaaaa",
+                            color: middleGrey,
                             font: {
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 size: fontSize,
                                 weight: '300',                      
                             },

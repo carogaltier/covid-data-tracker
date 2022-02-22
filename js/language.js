@@ -1,12 +1,4 @@
-let lang = "en";
-if(lang == "en"){
-
-} if (lang == "es") {
-
-};
-
 let langList = ['en', 'es'];
-
 
 let init = (data) => {
 
@@ -135,7 +127,7 @@ let init = (data) => {
 
 
 function selectLang(lang) {
-    fetch(`/g/language/${lang}.json`)
+    fetch( `language/${lang}.json`)
     .then(e => e.json())
     .then(data => init(data));
 }

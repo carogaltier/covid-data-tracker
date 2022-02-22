@@ -5,7 +5,9 @@ async function firstLoad(){
     countryDataAdd(countrySelect);
 };
 
-window.onresize = function(){ location.reload(); }
+window.onresize = function(){ 
+    fontSize = getComputedStyle(document.body).getPropertyValue('font-size');
+    runCharts(); }
 
 function runCharts(){
     cardDataAdd();
@@ -26,16 +28,10 @@ function runCharts(){
         lineChartDeaths(dataAll, lineChart3, lineChart4, "");
     };
 
-    if(id("btnMapCases1").disabled == true) { 
-        worldCasesMillion();
-    } else { 
-        worldDeathsMillion();
-    }
-    if(id("btnMapCases2").disabled == true) { 
-        worldCases();
-    } else { 
-        worldDeaths();
-    }
+    if(id("btnMapCases1").disabled == true) { worldCasesMillion() } 
+    else { worldDeathsMillion(); }
+    if(id("btnMapCases2").disabled == true) { worldCases(); } 
+    else { worldDeaths(); }
 
     if(id("btnWeekly3").disabled == true) { 
         lineChartVaccines(dataWeekly, lineChart5, lineChart6, titleTextWeek);
@@ -44,10 +40,9 @@ function runCharts(){
     } if(id("btnAll3").disabled == true) {
         lineChartVaccines(dataAll, lineChart5, lineChart6, "");
     };
-    firstLoad();
     vaccineDataAdd();
     continentDataAdd(continentSelect);
-  
+    firstLoad();
     
 };
 

@@ -27,7 +27,6 @@ function cardDataAdd(yest, twoDays){
         idContent("activeMillion", response.activePerOneMillion, lang);
         idContent("testsMillion", response.testsPerOneMillion, lang);
 
-
         // ------------ CHECKING IF THE CANVAS IS ALREADY USED -------------------
         if(nameCanvas11 !== undefined){ nameCanvas11.destroy(); } 
         if(nameCanvas12 !== undefined){ nameCanvas12.destroy(); } 
@@ -47,8 +46,8 @@ function cardDataAdd(yest, twoDays){
             options: {
                 locale: lang,
                 responsive: "true",
-                maintainAspectRatio: "false",
-                color: "#aaaaaa",
+               // maintainAspectRatio: "false",
+                color: middleGrey,
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -58,7 +57,7 @@ function cardDataAdd(yest, twoDays){
                             boxHeight: 20,
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400'
                             }
                         }
@@ -104,7 +103,7 @@ function cardDataAdd(yest, twoDays){
                 locale: lang,
                 responsive: "true",
                 maintainAspectRatio: "false",
-                color: "#aaaaaa",     
+                color: middleGrey,    
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -114,7 +113,7 @@ function cardDataAdd(yest, twoDays){
                             boxHeight: 20,                    
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400'
                             }
                         }
@@ -128,7 +127,7 @@ function cardDataAdd(yest, twoDays){
                         },
                         anchor: 'center',
                         align: 'center',
-                        color: '#000',                   
+                        color: '#000000',                   
                         labels: {            
                             title: {
                                 padding: 0,

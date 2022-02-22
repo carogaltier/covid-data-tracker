@@ -86,7 +86,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                 labels: pieLabels.pieLabel1,
                 datasets: [{
                 data: [response.recovered, response.active, response.deaths],
-                backgroundColor: ["#4bc0c0", "#ffcd56", "#ff6384"],
+                backgroundColor: [green, yellow, red],
                 borderColor: "transparent"
                 }]
             },
@@ -94,7 +94,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                 locale: lang,
                 responsive: "true",
                 maintainAspectRatio: "false",
-                color: "#aaaaaa",
+                color: middleGrey,
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -104,7 +104,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                             boxHeight: 20,
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400'
                             }
                         }
@@ -142,7 +142,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                 labels: pieLabels.pieLabel2,
                 datasets: [{
                 data: [(response.population - response.cases), response.cases],
-                backgroundColor: ["#4bc0c0", "#ff6384"],
+                backgroundColor: [green, red],
                 borderColor: "transparent"
                 }]
             },
@@ -150,7 +150,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                 locale: lang,
                 responsive: "true",
                 maintainAspectRatio: "false",
-                color: "#aaaaaa",     
+                color: middleGrey,   
                 plugins: {
                     legend: {
                         position: 'bottom',
@@ -160,7 +160,7 @@ function countryDataAdd(object=countrySelect, yest, twoDays) {
                             boxHeight: 20,                    
                             font: { 
                                 size: fontSize,
-                                family: 'Montserrat',
+                                family: fontNunito,
                                 weight: '400'
                             }
                         }

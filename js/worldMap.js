@@ -2,15 +2,13 @@
 function googleChart(labelsData, colorArray, mapID ) {
     google.charts.load('current', {
         'packages':['geochart'],
-        'mapsApiKey': 'complete-with-your-own-key'
+        'mapsApiKey': 'your-API-key-here'
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
       function drawRegionsMap() {
         let data = google.visualization.arrayToDataTable(labelsData);
         let options = {
             legend: 'none',
-            width: '100%',
-            height: '100%',
             maintainAspectRatio: false, 
             colorAxis: {
                 colors: colorArray
@@ -163,7 +161,7 @@ async function worldCases(){
 
   if(lang == "es") {
     id('absoluteTitle').textContent = "Casos totales de COVID-19 en el mundo";
-    id('tableCases2').textContent = "Top 10 de paises con el mayor número de casos de COVID-19";
+    id('tableCases2').textContent = "Top 10 de paises con el mayor número de casos";
     id('mapCases2').textContent = "Distribución de casos de COVID-19 en el mundo";
   } else {
     id('absoluteTitle').textContent = "Global COVID-19 total cases";
