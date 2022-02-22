@@ -38,7 +38,7 @@ The goal of this website is to offer COVID-19 information for the people, organi
 ### Tables
 - Top 10 countries with the highest total cases
 - Top 10 countries with the highest total cases per million
-- - Top 10 countries with the highest total deaths
+- Top 10 countries with the highest total deaths
 - Top 10 countries with the highest total deaths per million
 
 ### Filters
