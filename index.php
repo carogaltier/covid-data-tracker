@@ -32,31 +32,35 @@
     <link rel="stylesheet" href="css/btnTimeSelector.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/worldSummary.css">
-    <link rel="stylesheet" href="css/pieChart.css">
+    <link rel="stylesheet" href="css/charts.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/aboutMe.css">
     <link rel="stylesheet" href="css/credits.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
-    <link rel="stylesheet" href="css/print.css" media="print">
 
 </head>
 
 <body>
 
-    <main class="main-container">
+    <main class="grandparent-container">
         <?php require_once("aside.php");?>
-        <?php require_once("header.php");?>
-        <?php require_once("worldSummary.php");?>
-        <?php require_once("worldCasesLineChart.php");?>
-        <?php require_once("worldDeathsLineChart.php");?>
-        <?php require_once("worldMap1.php");?>
-        <?php require_once("worldMap2.php");?>
-        <?php require_once("worldVaccines.php");?>
-        <?php require_once("continentSummary.php");?>
-        <?php require_once("countrySummary.php");?>
-        <?php require_once("aboutMe.php");?>
-        <?php require_once("credits.php");?>
+        <div class="parent-container">
+            <?php require_once("header.php");?>
+            <?php require_once("worldSummary.php");?>
+            <?php require_once("worldCasesLineChart.php");?>
+            <?php require_once("worldDeathsLineChart.php");?>
+            <?php require_once("worldMap1.php");?>
+            <?php require_once("worldMap2.php");?>
+            <?php require_once("worldVaccines.php");?>
+            <?php require_once("continentSummary.php");?>
+            <?php require_once("countrySummary.php");?>
+            <?php require_once("aboutMe.php");?>
+            <?php require_once("credits.php");?> 
+            <div class="foot-text">
+                <p>COVID-19 Real Time Data © 2022. <span class="foot-text1">Created by </span><a class="link" href="https://www.carolinagonzalezgaltier.com/">Carolina González Galtier </a></p>
+            </div>
+        </div>
     </main>
 
     <!-- ---------------------- LIBRARIES --------------------- -->

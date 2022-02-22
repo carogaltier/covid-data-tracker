@@ -1,24 +1,23 @@
-<section class="container4 container" id="covid-relative-distribution-map">
-    <div class="map-content content">
+<section class="container" id="covid-relative-distribution-map">
+    <div class="container-title">
+        <h2 class="title">
+            <span id="relativeTitle">Global COVID-19 total cases per million</span>
+        </h2>
+        <h5 class="subtitle">
+            <span class="updated">Last updated on:</span>
+            <span class="todayDate highlight"></span>
+        </h5>
 
-        <div class="map-title">
-            <h2 class="title">
-                <span id="relativeTitle">Global COVID-19 total cases per million</span>
-            </h2>
-            <h5 class="subtitle">
-                <span class="updated">Last updated on:</span>
-                <span class="todayDate highlight"></span>
-            </h5>
-
-            <div class="selector">
-                <div class="day-btn">
-                    <button class="btnCases" id="btnMapCases1" disabled>Cases</button>
-                    <button class="btnDeaths" id="btnMapDeaths1">Deaths</button>
-                </div>
+        <div class="selector">
+            <div class="day-btn">
+                <button class="btnCases" id="btnMapCases1" disabled>Cases</button>
+                <button class="btnDeaths" id="btnMapDeaths1">Deaths</button>
             </div>
         </div>
-
-        <div class="card mapText">
+    </div>
+    
+    <div class="map-content content">
+        <div class="card mapText scroll">
             <h3 class="subtitle text-center" id="tableCases1">Top 10 countries with the highest total cases per million</h3>
             <div class="table1">
                 <table id="table1"></table>

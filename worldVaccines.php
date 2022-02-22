@@ -1,23 +1,22 @@
-<section class="container6 container" id="covid-vaccination-status">
-    <div class="vaccine-content content">
+<section class="container" id="covid-vaccination-status">
+    <div class="container-title">
+        <h3 class="title">Global COVID-19 vaccination status</h3>
 
-        <div class="vaccine-title">
-            <h3 class="title">Global COVID-19 vaccination status</h3>
+        <h5 class="subtitle">
+            <span class="updated">Last updated on:</span>
+            <span class="highlight" id="yesterdayDate"></span>
+        </h5>
 
-            <h5 class="subtitle">
-                <span class="updated">Last updated on:</span>
-                <span class="highlight" id="yesterdayDate"></span>
-            </h5>
-
-            <div class="selector">
-                <div class="day-btn">
-                    <button class="weekly" id="btnWeekly3" disabled>Weekly</button>
-                    <button class="monthly" id="btnMonthly3">Monthly</button>
-                    <button class="all" id="btnAll3">All</button>
-                </div>
+        <div class="selector">
+            <div class="day-btn">
+                <button class="weekly" id="btnWeekly3" disabled>Weekly</button>
+                <button class="monthly" id="btnMonthly3">Monthly</button>
+                <button class="all" id="btnAll3">All</button>
             </div>
         </div>
+    </div>
 
+    <div class="vaccine-content content">
         <div class="card linechart lineChart1">
             <h3 class="subtitle text-center">
                 <span id="vaccineCum">Cumulative COVID-19 vaccination</span>
@@ -38,40 +37,27 @@
             </div>
         </div>
 
+
         <div class="totalVac card">
-            <div class="flex">
-                <div class="left">
-                    <p id="totalVaccine">Total vaccination</p>
-                    <h3 class="card-text text-blue" id="totalVac"></h3>
-                </div>
+            <div class="chart-child">
+                <h4 class="card-title" id="totalVaccine">Total vaccination</h4>
+                <p class="card-subtext text-blue" id="totalVac"></p>
+            </div>
+            <div class="chart-child">
+                <h4 class="card-title" id="totalVaccineHundred">Vaccines per hundred</h4>
+                <p class="card-subtext text-blue" id="hundredVac"></p>
             </div>
         </div>
-
-        <div class="houndredVac card">
-            <div class="flex">
-                <div class="left">
-                    <p id="totalVaccineHundred">Vaccines per hundred people</p>
-                    <h3 class="card-text text-blue" id="hundredVac"></h3>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="dailyVac card">
-            <div class="flex">
-                <div class="left">
-                    <p id="dailyVaccine">Daily vaccination</p>
-                    <h3 class="card-text text-green" id="dailyVac"></h3>
-                </div>   
-            </div>
-        </div>
-
-        <div class="mIllionVac card">
-            <div class="flex">
-                <div class="left">
-                    <p id="dailyVaccineMillion">Daily vaccines per million</p>
-                    <h3 class="card-text text-green" id="mIllionVac"></h3>
-                </div>
+            <div class="chart-child">
+                <h4 class="card-title" id="dailyVaccine">Daily vaccination</h4>
+                <p class="card-subtext text-green" id="dailyVac"></p>
             </div> 
+            <div class="chart-child">
+                <h4 class="card-title" id="dailyVaccineMillion">Daily vaccines per million</h4>
+                <p class="card-subtext text-green" id="mIllionVac"></p>
+            </div>
         </div>
     </div>
 
