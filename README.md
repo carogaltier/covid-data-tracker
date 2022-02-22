@@ -75,9 +75,9 @@ The website content is adapted to work properly in:
 
 ## Screenshots 
 
-#### Global Dashboard
+#### World Summary
 
-![Global Dashboard](/screenshots/global-dashboard.jpg "Global dashboard")
+![Global Dashboard](/screenshots/world-summary.jpg "World Summary")
 
 #### Global Cases Progression
 
