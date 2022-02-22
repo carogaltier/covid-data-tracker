@@ -11,7 +11,7 @@
     "asideCountries": "Paises",
     "asideAbout": "Acerca de",
     "asideCredits": "Créditos",
-    "asideLang": "Lenguaje",
+    "asideLang": "Idioma",
     "asideMode": "Modo",
 
     "mainTitle1": "COVID-19 en tiempo real.",
@@ -40,7 +40,6 @@
     "deathsTitle1": "Progresión de muertes en",
     "deathsTitle2": "",
 
-    "statsMillion": "Estadísticas por millón de COVID-19",
     "pieChartTitle1": "Distribución de casos totales de COVID-19",
     "pieChartTitle2": "Población infectada de COVID-19",
 
@@ -52,12 +51,12 @@
     "newRecovered": "Nuevos recuperados",   
     "totalTests": "Tests totales",   
     "testPerPeople": "Tests por persona",
-    "casesMillion": "Casos",
-    "deathsMillion": "Muertes",
-    "recoveredMillion": "Recuperados",
-    "activesMillion": "Activos",
-    "criticalMillion": "Críticos",
-    "testMillion": "Tests",
+    "casesMillion": "Casos por millón",
+    "deathsMillion": "Muertes por millón",
+    "recoveredMillion": "Recuperados por millón",
+    "activesMillion": "Activos por millón",
+    "criticalMillion": "Críticos por millón",
+    "testMillion": "Tests por millón",
 
     "totalVaccine": "Vacunas totales",
     "totalVaccineHundred": "Vacunas cada cien habitantes",
@@ -94,7 +93,7 @@
     "about-title": "Hola! Soy Carolina González Galtier",
     "about-subtitle": "Médica, desarrolladora web y analista de datos",
     "about-text1": "Me apasiona el análisis y la visualización de datos en salud. Por este motivo me he formado de manera autodidacta en distintas áreas afines tales como epidemiología, programación, herramientas de visualización y manejo de bases de datos.",
-    "about-text2": "Si quieres conocer más sobre mi, o tienes algún comentario o sugerencia te invito a que pases por mi ",
+    "about-text2": "Si quieres conocer más sobre mí o tienes algún comentario o sugerencia te invito a que pases por mi ",
     "myWebsite": "página web.",
     "about-text3": "Si has disfrutado el contenido de esta página y quieres apoyar futuros proyectos puedes hacer una donación aquí:",
 
@@ -103,7 +102,7 @@
     "credits-subtitle3": "Librerías",
 
     "credits-text1": "Los datos provienen de disease.sh API, una API libre con estadísticas sobre enfermedades. Contiene una gran cantidad de información detallada sobre distintos virus, incluido COVID-19. Para mayor información sobre la API haz",
-    "credits-text2": "Éstas hermosas imágenes se pueden encontrar la página de ilustraciones de código abierto ",
+    "credits-text2": "Estas hermosas imágenes se pueden encontrar la página de ilustraciones de código abierto ",
     "credits-text3": "Para construir éste proyecto fueron utilizadas las siguientes librerías:",
     "API-link": "click aquí.",
     "foot-text1": "Creado por "

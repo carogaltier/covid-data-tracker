@@ -40,7 +40,6 @@
     "deathsTitle1": "",
     "deathsTitle2": "COVID-19 deaths progression",
     
-    "statsMillion": "COVID-19 stats per one million",
     "pieChartTitle1": "COVID-19 total cases distribution",
     "pieChartTitle2": "Population infected by COVID-19",
 
@@ -52,15 +51,15 @@
     "newRecovered": "New recovered",   
     "totalTests": "Total tests",   
     "testPerPeople": "Tests per people",
-    "casesMillion": "Cases",
-    "deathsMillion": "Deaths",
-    "recoveredMillion": "Recovered",
-    "activesMillion": "Actives",
-    "criticalMillion": "Critical",
-    "testMillion": "Tests",
+    "casesMillion": "Cases per million",
+    "deathsMillion": "Deaths per million",
+    "recoveredMillion": "Recovered per million",
+    "activesMillion": "Actives per million",
+    "criticalMillion": "Critical per million",
+    "testMillion": "Tests per million",
 
     "totalVaccine": "Total vaccination",
-    "totalVaccineHundred": "Vaccines per hundred people",
+    "totalVaccineHundred": "Vaccines per hundred",
     "dailyVaccine": "Daily vaccination",
     "dailyVaccineMillion": "Daily vaccines per million",
 
@@ -93,10 +92,10 @@
 
     "about-title": "Hi! I'm Carolina González Galtier",
     "about-subtitle": "Medical doctor, Web designer and data analyst",
-    "about-text1": "I'm passionate about the analysis and visualization of healthcare data. For this reason I have self-taught in different related areas such as epidemiology, programming, visualization tools and relational database management.",
-    "about-text2": "If you want to know more about me, or have any comments or suggestions, I invite you to visit my ",
+    "about-text1": "I'm passionate about the analysis and visualization of healthcare data. For this reason I have studied on my own different related areas such as epidemiology, programming, visualization tools and relational database management.",
+    "about-text2": "If you want to know more about me or if you have any comments or suggestions I invite you to visit my ",
     "myWebsite": "website.",
-    "about-text3": "If you have enjoyed the content of this page and want to support future projects you can make a donation here:",
+    "about-text3": "If you have enjoyed the content of this website and you want to support future projects you can make a donation here:",
 
     "credits-subtitle1": "Data source",
     "credits-subtitle2": "Images source",
