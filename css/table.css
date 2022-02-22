@@ -6,21 +6,21 @@ table {
   max-width:100%;
   border-spacing:0;
   width:100%;
-  margin:10px 0;
-  border:1px solid #c9cbcf;
+  margin:0.5rem 0;
+  border: 0.0625rem solid #c9cbcf;
   border-collapse:separate;
 }
 
 table th,
 table td {
-  padding:8px;
-  line-height:1em;
+  padding: 0.5rem;
+  line-height:1rem;
   text-align:left;
-  border-top:1px solid #c9cbcf;
+  border-top:0.0625rem solid #c9cbcf;
 }
 
 table th {
-  font-size: 1em;
+  font-size: 1rem;
   background: #c9cbcf50;
   font-weight:400;
   vertical-align:bottom;
@@ -36,14 +36,14 @@ table thead:first-child tr td {
 }
 
 table tbody + tbody {
-  border-top:2px solid #c9cbcf;
+  border-top: 0.125rem solid #c9cbcf;
 }
 
 table th + th,
 table td + td,
 table th + td,
 table td + th {
-  border-left:1px solid #c9cbcf;
+  border-left:0.0625rem solid #c9cbcf;
 }
 
 table thead:first-child tr:first-child th,

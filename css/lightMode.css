@@ -1,95 +1,78 @@
 /* --------- LIGHT-DARK MODE ----------- */
-
-.aside-footer .list .dark {
+.dark {
 	display: flex;
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
+	flex-wrap: nowrap;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	align-items: center;
 }
 
-.aside-footer .list .dark a {
-	width: 100%;
-	text-align: center;
-	border-left: none;
-	border-top: none;
+/* -------- TEXT ----------- */
+.mode-text {
+	border: none;
+	padding-left: 1rem;
 }
 
-.aside-footer .list .dark .mode {
-	padding: 0;
-	text-align: center;
+.dark:hover .mode-text, 
+.dark.light-mode:hover .mode-text {
+	color: var(--color-blue);
 }
 
-.aside-footer .dark span .sun {
-	padding: 0.8em;
-	background: -webkit-linear-gradient(-45deg, var(--color-red), var(--color-orange));
-	border-radius: 50%;
+.dark.list-active .mode-text {
+	color: var(--color-white);
+}
+
+.mode-text:hover {
+	border: none;
+}
+
+/* ---------- ICONS ----------- */
+.dark .moon,
+.dark .moon:hover,
+.dark.light-mode .sun,
+.dark.light-mode .sun:hover {
+	display: block;
 	color: #fff;
-	margin-right: 1.2em;
-	margin-top: 0.5em;
-	z-index: 5;
-}
-
-.aside-footer .dark span .sun:hover {
-	background: var(--color-red);
-}
-
-.aside-footer .list .dark:hover a {
-	color: var(--color-blue);
-}
-
-.aside-footer .list .dark.list-active a {
-	color: var(--color-white);
-}
-
-.aside-footer .list .dark.light-mode:hover a {
-	color: var(--color-blue);
-}
-
-
-.aside-footer .dark span .moon {
-	background-color: var(--bg-sidebar-nav);
-	color: var(--bg-sidebar-nav);
-	margin-left: 1.7em;
+	padding: 0.8rem;
 	border-radius: 50%;
-	padding: 0.8em;
-	margin-top: 0.5em;
-	z-index: -1;
-}
-
-.aside-footer .dark span .moon:hover {
-	background-color: var(--bg-sidebar-nav);
-}
-
-.aside-footer .dark .moon:hover {
-	background-color: var(--color-green);
-}
-
-.aside-footer .dark.light-mode span .sun {
-	background: var(--bg-sidebar-nav);
-	color: var(--bg-sidebar-nav);
-	z-index: -1;
-}
-
-.aside-footer .dark.light-mode span .sun:hover {
-	background: var(--bg-sidebar-nav);
-}
-
-.aside-footer .dark.light-mode span .moon {
-	background: -webkit-linear-gradient(-45deg, var(--color-green), var(--color-blue));
-	color: var(--color-white);
 	z-index: 5;
+	transition: opacity 0.3s;
 }
 
-.aside-footer .dark.light-mode span .moon:hover {
-	background: var(--color-green);
+.dark .moon {
+	background: -webkit-linear-gradient(-45deg, var(--color-green), var(--color-blue));
 }
 
+.dark.light-mode .sun {
+	background: -webkit-linear-gradient(-45deg, var(--color-red), var(--color-orange));
+}
+
+.dark.light-mode .sun:hover {
+	background: var(--color-red);
+	color: #ffffff;
+}
+
+.dark .moon:hover {
+	background-color: var(--color-green);
+	color: #ffffff;
+}
+
+.dark.light-mode .moon, 
+.dark.light-mode .moon:hover, 
+.dark .sun, 
+.dark .sun:hover {
+	display: none;
+}
+
+
+/* ------- PERSONALIZE STYLES --------- */
 .light {
-	--bg-sidebar: #eff1f1;
-	--bg-cards: #ffffff;
-    --bg-sidebar-nav: #f1f5f5;
-	--bg-body: #f6f8f9;
-    --color-white: #000000;
-	--color-border: rgba(0, 0, 0, 0.12);
-
+    --bg-sidebar: #ffffff20;
+    --bg-sidebar-nav: #ffffff10;
+    --bg-cards: #ffffff25;
+    --bg-body: #0a0c0c;
+    --color-white: rgb(216, 215, 214);
+    --color-border: #8b868020;
 }

@@ -1,72 +1,56 @@
-.aboutMe-content {
-    justify-content: flex-start;
-}
-
-.description {
-    align-self: flex-start;
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
-    align-content: flex-start;
-    text-align: justify;
-}
-
-.photo {
-    display: block;
-    width: 17rem;
-    max-width: 80%;
-    padding: 1 rem;
-    margin: auto;
-    align-self: center;
-}
-
-.description .header-menu {
-    justify-content: center;
-}
-
-.about {
-    padding: 0 1rem;
-    border-left: 1px solid var(--color-grey);
-}
-
-.link {
-    color: var(--color-blue);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.link:hover {
-    color: var(--color-green);
-    text-decoration: none;
-}
-
-.about-title {
-    align-self: flex-start;
-    margin: 0;
-    padding-bottom: 1rem;
-    font-family: var(--font-mont);
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-    color: var(--color-red);
-}
-
 .about-subtitle {
     color: var(--color-red);
     font-weight: 400;
-    font-size: 1.6rem;
-    margin: 1.2rem 0 0.8rem 0;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
 }
 
-.about-text {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.6rem;
+.photo {
+    width: 100%;
+    max-width: 35vw;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.social .header-menu {
+    justify-content: center;
+}
+
+.description {
+    overflow-y: auto;
+    padding: 0 1rem 0 2rem;
+    border-left: 1px solid var(--color-border);
+}
+
+.description p {
+    text-align: justify;
 }
 
 .paypal-form {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     display: flex;
     justify-content: center;
+}
+
+.btn-paypal {
+    background: linear-gradient(-45deg, var(--color-red), var(--color-orange));
+    border-radius: 0.25rem;
+	padding: 0.6125rem 1rem;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 0 1px #00000013, 0 1px 3px #00000020;
+	font-size: 1.125rem;
+	font-weight: 400;
+	border: none;
+	font-family: var(--font-nunito);
+    margin-top: 1rem;
+}
+
+.btn-paypal:hover{
+	background: var(--color-red);
+}
+
+.btn-paypal i {
+    padding-right: 1rem;
 }

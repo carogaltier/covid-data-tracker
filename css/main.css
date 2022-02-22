@@ -1,43 +1,45 @@
 html {
 /* ------------------------ COLORS ---------------------------- */
-    --bg-sidebar: #343a40;
-    --bg-sidebar-nav: #3d434a;
-    --bg-cards: #343a40;
-    --color-border: rgba(255,255,255,0.15);
-    --bg-body: #454d55;
-
-    --color-grey: #c9cbcf;
-    --color-white: #FFFFFF;
-    --color-blue: #36a2eb;	
-    --color-green: #4BC0C0;
-    --color-light-green: #87e4a3;
-    --color-yellow: #ffcd56;
-    --color-orange: #ff9f40;	
-    --color-red: #ff6384;
+    --bg-sidebar: #cdcfd3;
+    --bg-sidebar2: #b4cad8;
+    --bg-sidebar-nav: #ffffff20;
+    --bg-cards: #ffffff;
+    --bg-body: #dbdbdb;
+   
+    --color-grey: #a8a8a8;
+    --color-white: #000000;
+    --color-blue: #4f7a99;
+    --color-green: #5a928b;
+    --color-light-green: #87E4A3;
+    --color-yellow: #c4944d;
+    --color-orange: #dd6c37;
+    --color-red: #c96379;
+    --middle-grey: #8b8680;
+    --color-border: #00000020;
 
 /* ------------------------ FONTS ---------------------------- */
-    --font-size: 14px;
     --font-nunito: 'Nunito', sans-serif;
     --font-mont: 'Montserrat', sans-serif;
 
     scroll-behavior: smooth;
-
-    --aspect-ratio1: 1.5;
-    --aspect-ratio2: 1.95;
+    font-size: clamp(14px, 1vw, 16px);
 }
+
 
 /* -------------------------- BODY --------------------------- */
 body {
-    font-size: var(--font-size);
     background-color: var(--bg-body);
-    transition: 0.3s ease-in all;
+    color: var(--color-white);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* ---------------------- DISPLAY ---------------------------- */
 .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 .wrapper {
@@ -58,29 +60,26 @@ body {
 /* ----------------- BORDERS ----------------------- */
 .border-bottom { border-bottom: 1px solid var(--color-border); }
 
-/* ----------------- TEXT COLOR STYLES ----------------------- */
-.text-blue { color: var(--color-blue); }
-.text-green { color: var(--color-green); }
-.text-light-green { color: var(--color-light-green); }
-.text-yellow { color: var(--color-yellow); }
-.text-orange { color: var(--color-orange); }
-.text-red {	color: var(--color-red); }
-
 
 /* ----------------------- TEXT ------------------------------ */
-.title {
+.title, 
+.subtitle {
+    width: 100%;
+    display: block;
     color: var(--color-white);
-	font-size: 2.3rem;
-	font-weight: 500;
 	margin: 0;
 }
 
+.title {
+	font-size: clamp(1.6rem, 1vw, 2rem); 
+	font-weight: 500;
+    line-height: 2.5rem;
+}
+
 .subtitle {
-    color: var(--color-white);
-    margin: 0.3rem 0;
-	font-size: 1.1rem;
-	font-weight: 300;
-	line-height: 1.5rem;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 2rem;
 }
 
 .subtitle span {
@@ -92,10 +91,21 @@ body {
 	color: var(--color-orange);
 }
 
-.statsMillion {
-	font-size: 1.8rem;
-	font-weight: 400;
-	text-align: start;
-	padding: 0 1rem;
-	margin: 0.5rem 0;
+.link {
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: 500;
 }
+
+.link:hover {
+    color: var(--color-green);
+    text-decoration: none;
+}
+
+/* ----------------- TEXT COLOR STYLES ----------------------- */
+.text-blue { color: var(--color-blue); }
+.text-green { color: var(--color-green); }
+.text-light-green { color: var(--color-light-green); }
+.text-yellow { color: var(--color-yellow); }
+.text-orange { color: var(--color-orange); }
+.text-red {	color: var(--color-red); }

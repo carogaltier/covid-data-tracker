@@ -11,136 +11,31 @@
     } 
 
     .container {
-        margin: 3rem auto;
-        height: 98vh;
-        width: 98vw;
         page-break-after: always;
+        page-break-before: always;
         page-break-inside: avoid;
-    }
-    /* -------- FIXING SCROLL ISSUES ------------ */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .main-container {
-        overflow-y: visible;
-        overflow-x: visible;
-        width: 100vw;
-        height: 100vh;
     }
 
     /* ---------- CHANGING COLORS --------- */
-    body, .main-container, .container, .content, .header-menu li a {
+    body, 
+    .main-container, 
+    .container, .content, 
+    .header-menu li a {
         background-color: #ffffff;
         color: #000000;
     }
 
-    body, .main-container, .container {
-        margin: 0;
-        padding: 0;
-        height: 95vh;
-        width: 95vw;
-    }
-
-    .header, .aside, .footer {
+    #home, 
+    .aside, 
+    #credits, 
+    #about-me, 
+    ::-webkit-scrollbar {
         display: none;
     }
 
-    .container .content { 	
-        height: 100%;
-        width: 100%;
-        page-break-after: always;
+
+    .container {
+        width: 100vw;
+        height: 100vh;
     }
-    
-    .worldMapContainer {
-        margin: 0;
-    }
-
-    .chart-container {
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        max-width: 400px;
-    }
-
-
-    .statsMillion {
-        font-size: 1.4rem;
-        display: flex;
-        align-self: center;
-    }
-
-
-    
-/* ------------ NESTED GRIDS -------------- */
-.container {
-    grid-template-columns: 1;
-    grid-template-rows: max-content;
-    grid-template-areas: 
-	"content" 	
-	;
-}
-
-/* ------------ SUMMARY CONTENT (World, Continents and Countries)-------------- */
-.summary-content {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:  	
-	"summary-title 		summary-title    	summary-title		summary-title"
-	"cases         		deaths				piechart    		piechart"                			
-	"recovered			test				piechart    		piechart"  
-	"stats				stats				stats				stats"	           			
-	;
-}
-
-.piechart {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:  	
-	"chart1 chart2"    		
-	;
-}
-
-.stats {
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: auto;
-    grid-template-areas:  	
-	"stats-subtitle    		stats-chart"
-	;
-}
-
-
-/* ------------ LINE CAHRT CONTENT (Cases and Deaths)-------------- */
-.lineChart-content {
-	grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:  	
-	"lineChart-title    lineChart-title"
-	"lineChart1     	lineChart2"                			   			
-	;
-}
-
-/* ------------ WORLD MAP CONTENT (Cases and Deaths -absolute and per million-)-------------- */
-.map-content {
-	grid-template-columns: 3fr 5fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:  	
-	"map-title    	map-title"
-	"mapText     	worldMap"                			   			
-	;
-}
-
-/* ------------ WORLD VACCINES DATA CONTENT -------------- */
-.vaccine-content {
-	grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:  
-	"vaccine-title    	vaccine-title		vaccine-title		vaccine-title"
-	"lineChart1     	lineChart1		  	lineChart2			lineChart2"
-	"totalVac     		houndredVac 		dailyVac			mIllionVac"                 			   			
-	;
-}
-
-
-}
-    
+} 

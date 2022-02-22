@@ -1,30 +1,27 @@
-.stats {
-	background-color: var(--bg-cards);
-	border-radius: 4px;
-	padding: 0;
-}
-
-.stats-subtitle {
-	align-self: center;
+/* ------- STATS CARD ----------- */
+.statsMillion {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: start;
+	line-height: 2rem;
+	margin: auto;
+	padding: 0 1vw;
 }
 
 .stats-chart {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 1rem;
-	margin: 0;
-	align-self: stretch;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0 1vw;
+	align-self: stretch;
 }
 
-.stats-chart .chart-child {
+.chart-child {
 	text-align: center;
-	padding: 0 1rem;
+	align-items: center;
 }
 
-.stats-chart .card-subtext{
-	padding: 0em;
-	text-align: center;
-}
+
+
 

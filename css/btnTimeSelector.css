@@ -1,5 +1,7 @@
 .selector {
 	align-self: end;
+	display: flex;
+    justify-content: flex-end;
 }
 
 .selector .day-btn {
@@ -8,15 +10,15 @@
 }
 
 .selector .day-btn button {
-	margin-left: 1em;
-	border-radius: 4px;
-	padding: 0.6em 1em;
+	margin-left: 1rem;
+	border-radius: 0.25rem;
+	padding: 0.6125rem 1rem;
 	color: #fff;
 	cursor: pointer;
-	border: 0 solid rgba(0,0,0,.125);
-	box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
-	font-size: 1.1em;
-	font-weight: 300;
+	box-shadow: 0 0 1px #00000013, 0 1px 3px #00000020;
+	font-size: 1rem;
+	font-weight: 400;
+	border: none;
 	font-family: var(--font-nunito);
 	background-color: var(--color-blue);
 }
@@ -32,4 +34,27 @@
 	border: 1px solid var(--color-grey);
 	background-color: var(--color-grey);
 	color: #fff;
+}
+
+
+.select {
+    display: flex;
+    justify-content: end;
+}
+
+.select select {
+	padding: 0.5rem 1rem;
+    font-size: 1rem;
+	font-weight: 400;
+    font-family: var(--font-nunito);
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+	border: none;
+	box-shadow: 0 0 1px #00000013, 0 1px 3px #00000020;
+    border-radius: 0.25rem;
+}
+
+.select option, .select select:hover {
+    background-color: #ffffff;
 }

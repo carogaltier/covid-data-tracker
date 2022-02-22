@@ -1,13 +1,17 @@
-.credits-subtitle {
-    color: var(--color-red);
-    font-weight: 400;
-    font-size: 1.6rem;
-    margin: 1.2rem 0 0.8rem 0;
+.credits-description {
+    padding: 1rem 2rem 1rem 1rem;
+    overflow-y: auto; 
+    border-right: 1px solid var(--color-border);
 }
 
-.credits-subtitle1 {
-    margin: 0 0 0.8rem 0;
+.credits-description .title {
+    line-height: 3rem;
 }
+
+.credits-description .subtitle {
+    text-align: justify;
+}
+
 .credits {
     text-align: justify;
     display: flex;
@@ -16,21 +20,17 @@
     align-content: flex-start;
 }
 
-.credits-description {
-    padding-right: 2rem;
-}
-
 .credits-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    border-left: 1px solid var(--color-grey);
+    padding: 1rem;
 }
 
 .credits-image img {
     display: block;
     width: 100%;
+    max-width: 50vw;
     align-self: center;
 }
 
@@ -43,10 +43,3 @@
     padding-top: 0.7rem;
 }
 
-.foot-text {
-    color: var(--color-white);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2rem;
-}

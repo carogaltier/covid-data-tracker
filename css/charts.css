@@ -1,0 +1,48 @@
+/* ------------ PIE CHART ----------------- */
+.piechart {
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-self: stretch;
+}
+
+.piechart .subtitle {
+	padding-bottom: 1rem;
+}
+
+.chart1 {
+	border-right: 1px solid var(--color-border);
+}
+
+.chart2 {
+	border-left: 1px solid transparent;
+}
+
+.canvas {
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	position: relative;
+}
+
+
+/* -------- LINE & GEO CHARTS ---------- */
+.lineChart-content canvas {
+    margin: auto;
+    height: calc(100vh - 20rem);
+    width: 100% !important;
+}
+
+.worldMapContainer,
+#worldMap1, 
+#worldMap2 {
+    margin: auto;
+    height: calc(100vh - 20rem);
+	width: 100% !important;
+    max-width: 50vw;
+}
+/* -------- VACCINE LINE-CHARTS ---------- */
+.vaccine-content canvas {
+    margin: auto;
+    height: calc(100vh - 27.5rem);
+    width: 100% !important;
+}
